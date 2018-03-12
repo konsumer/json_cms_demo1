@@ -39,8 +39,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Url", name: "url", widget: "string"}
+      - {label: "Description", name: "blurb", widget: "text"}
+      - {label: "Link Title", name: "link_title", widget: "string"}
+      - {label: "Link Url", name: "link_href", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Priority", name: "priority", widget: "number", valueType: "int", default: 0}
       - {name: "horz_image", label: "Horizontal Image", widget: "image"}
