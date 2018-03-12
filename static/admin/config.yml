@@ -31,13 +31,17 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "json_post"
-    label: "JSON"
-    folder: "src/pages/json_post"
+  - name: "news"
+    label: "News Item"
+    folder: "src/pages/news"
     format: "json"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Content", name: "content", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Url", name: "url", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Priority", name: "priority", widget: "number", valueType: "int", default: 0}
+      - {name: "horz_image", label: "Horizontal Image", widget: "image"}
+      - {name: "site_image", label: "Site Image", widget: "image"}
