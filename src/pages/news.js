@@ -21,7 +21,7 @@ export default ({data}) => (
 
 export const newPageQuery = graphql`
 query NewsPage {
-  allNewsJson{
+  allNewsJson (sort:{order:DESC, fields:priority}) {
     edges{
       node{
         title
