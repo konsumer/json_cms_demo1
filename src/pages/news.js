@@ -7,11 +7,11 @@ export default ({data}) => (
       <ul>
         {data.allNewsJson.edges.map(e => (
           <li>
+            <img src={`/files/${e.node.horz_image}`} />
             <h3>{e.node.title}</h3>
             <p>{e.node.blurb}</p>
             <a href={e.node.link_href}>{e.node.link_title}</a>
-            <img src={e.node.horz_image} />
-            <img src={e.node.site_image} />
+            <img src={`/files/${e.node.site_image}`} />
           </li>
       ))}
       </ul>
